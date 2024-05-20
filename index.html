@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cafe.css">
+    <title>카페 메뉴 주문</title>
+</head>
+
+<body>
+    <!-- 수량 모달 -->
+    <div class="counter_modal">
+        <div class="background"></div>
+        <div class="counter_modal_wrap">
+            <h1>주문 수량</h1>
+            <div class="counter">
+                <button class="decrease">-</button>
+                <span class="modal_amount">1</span>
+                <button class="increase">+</button>
+            </div>
+            <div class="btn_wrap">
+                <button class="cancle_btn">취소</button>
+                <button class="order_btn">주문</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메뉴 -->
+    <section class="menu_container">
+        <h1 class="title">메뉴</h1>
+        <ul class="menu_lists"></ul>
+    </section>
+    <!-- 주문 -->
+    <section class="receive_container">
+        <h1 class="title">주문</h1>
+        <p class="receive_text"></p>
+        <ul class="receive_lists"></ul>
+    </section>
+    <!-- 결제 -->
+    <section class="payment_container">
+        <p class="total_price"></p>
+        <button class="payment_btn">결제하기</button>
+    </section>
+
+    <script src="./js/cafe.js"></script>
+</body>
+
+</html>

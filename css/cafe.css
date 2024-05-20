@@ -1,0 +1,146 @@
+@charset 'utf-8';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body,
+p,
+h1,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-bottom: 20px;
+  padding: 0;
+}
+
+.title {
+  font-size: 20px;
+  padding: 20px 0 20px 0;
+}
+
+/* menu */
+.menu_container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.menu_lists {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu_lists dl {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  padding: 20px 0;
+  line-height: 1.5;
+  border: 1px solid #494949;
+  cursor: pointer;
+}
+
+.menu_lists dl:hover {
+  background-color: bisque;
+}
+
+.menu_lists dl p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* order */
+.receive_container,
+.payment_container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.receive_lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.receive_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+  border-bottom: 1px solid #494949;
+}
+
+/* counter */
+.counter_modal {
+  display: none;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.counter_modal_wrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  padding: 30px 30px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.decrease,
+.increase {
+  padding: 5px 10px;
+}
+
+.modal_amount {
+  width: 100%;
+  padding: 5px 0;
+  border: 1px solid #626262;
+  border-radius: 3px;
+}
+
+.btn_wrap {
+  display: flex;
+  gap: 10px;
+}
+
+.order_btn,
+.cancle_btn {
+  width: 100%;
+  padding: 5px 0;
+  margin-top: 20px;
+}
+
+.receive_wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
